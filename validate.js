@@ -13,6 +13,6 @@ const oBservador = new IntersectionObserver((entries) => {
 
 
 
-const elements = document.querySelectorAll('.animate');
+const elements = document.querySelectorAll('.animate', '.animate-left');
 
 elements.forEach( (element) => oBservador.observe(element) );
