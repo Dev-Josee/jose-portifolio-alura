@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/efectscroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -42,21 +42,21 @@
         </section>
 
         <!-- Sessão de Header/Title/Hero -->
-        <section class="title">
+        <section class="title" >
             <div class="title__div">
                 <div class="title__container" id="#sobremim">
-                    <h2 class="title__bio">Olá, meu nome é José e construo páginas web</h2>
-                    <h3 class="title__subsection"> e atualmente estou
+                    <h2 class="title__bio animate">Olá, meu nome é José e construo páginas web</h2>
+                    <h3 class="title__subsection animate"> e atualmente estou
                         participando no projeto Oracle ONE na Alura.</h3>
                     <ul class="title__network">
                         <!-- Ponha os links de suas redes sociais favoritas -->
-                        <li class="title__network__item"><a href="https://github.com/Dev-Josee" target="_blank">Github
+                        <li class="title__network__item animate"><a href="https://github.com/Dev-Josee" target="_blank">Github
                                 <i class="fa-brands fa-github"></i> </a></li>
-                        <li class="title__network__item"><a href="https://www.linkedin.com/in/jose-carlos-front/"
+                        <li class="title__network__item animate"><a href="https://www.linkedin.com/in/jose-carlos-front/"
                                 target="_blank">Linkedin <i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li class="title__network__item"><a href="#">Instagram <i
+                        <li class="title__network__item animate"><a href="#">Instagram <i
                                     class="fa-brands fa-instagram"></i></a></li>
-                        <li class="title__network__item"><a href="https://drive.google.com/drive/u/2/home"
+                        <li class="title__network__item animate"><a href="https://drive.google.com/drive/u/2/home"
                                 target="_blank">Curriculo <i class="fa-regular fa-file"></i></a></li>
                     </ul>
                 </div>
@@ -66,12 +66,12 @@
         <!-- Sessão sobre mim -->
         <section class="about">
             <div class="about__container">
-                <h3 class="about__title">Sobre mim</h3>
-                <p class="about__paragraph">E aí, tranquilo? Estou muito animado para compartilhar um pouco sobre minha
+                <h3 class="about__title animate">Sobre mim</h3>
+                <p class="about__paragraph animate">E aí, tranquilo? Estou muito animado para compartilhar um pouco sobre minha
                     jornada e paixão pela área de programação.
                     Atualmente estou participando no projeto Oracle ONE na Alura.
                     Onde estou expandindo meus conhecimentos e habilidades. </p>
-                <p class="about__paragraph">No entanto, meu verdadeiro fascínio reside no
+                <p class="about__paragraph animate">No entanto, meu verdadeiro fascínio reside no
                     mundo do JavaScript e da programação web. A cada linha de código que escrevo, sinto uma energia
                     renovada e uma conexão profunda com esse universo dinâmico e em constante evolução.</p>
                 <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
@@ -81,11 +81,11 @@
         <!-- Sessão de Skills/Habilidades -->
 
         <section class="skills">
-            <h3 class="skills__title" id="skills">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
+            <h3 class="skills__title animate " id="skills">Skills</h3>
+            <div class="skills__line animate animate-right">
+                <div class="skills__box ">
                     <ul>
-                        <li class="skills__img"><i class="fa-brands fa-html5"></i></li>
+                        <li class="skills__img animate animate-left"><i class="fa-brands fa-html5"></i></li>
 
 
                     </ul>
@@ -93,7 +93,7 @@
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"><i class="fa-brands fa-js"></i></li>
+                        <li class="skills__img animate animate-left"><i class="fa-brands fa-js"></i></li>
 
 
                     </ul>
@@ -102,14 +102,14 @@
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"><i class="fa-brands fa-node-js"></i></li>
+                        <li class="skills__img skills__img animate animate-left"><i class="fa-brands fa-node-js"></i></li>
 
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <i class="fa-brands fa-react"></i></li>
+                        <li class="skills__img skills__img animate animate-left"> <i class="fa-brands fa-react"></i></li>
 
 
                     </ul>
@@ -118,7 +118,7 @@
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"><i class="fa-brands fa-css3-alt"></i></li>
+                        <li class="skills__img skills__img animate animate-left"><i class="fa-brands fa-css3-alt"></i></li>
 
                     </ul>
                 </div>
@@ -196,18 +196,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Insira a logo de seu local de formação -->
-                        <li class="academic__courses__item__img"><img src=""></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Gestão da Cadeia de Suprimentos e Logística </h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2017- Escola Profissionalizante Virgem Poderosa</p>
-                        </li>
-                    </ul>
-                </div>
+
 
             </div>
         </section>
@@ -217,11 +206,12 @@
             <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
             <div class="experiencie__box">
                 <!-- Insira a logo/captura de seu projeto/trabalho -->
-                <img class="experience__img" src="">
                 <div class="experience__info">
                     <h2 class="experience__title">Decodificador de texto</h2>
                     <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="video-gif-project"></div>
+                    <div class="video-gif-project">
+                        <video src="/assets/2024-04-24 00-43-52.mp4" autoplay muted></video>
+                    </div>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                         <span class="experience__repo"><a href="https://github.com/Dev-Josee/challanger-alura"
@@ -234,7 +224,9 @@
                 <div class="experience__info">
                     <h2 class="experience__title">Formulário</h2>
                     <h3 class="experience__text">formulário para prática em armazenamento com localstorage </h3>
-                    <div class="video-gif-project"></div>
+                    <div class="video-gif-project">
+                        <video src="/assets/2024-04-24 00-45-12.mp4" autoplay muted></video>
+                    </div>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                         <span class="experience__repo"><a href="https://github.com/Dev-Josee/form-storage"
@@ -247,7 +239,9 @@
                 <div class="experience__info">
                     <h2 class="experience__title">App de clima com API</h2>
                     <h3 class="experience__text">app para pratica de requerimento com api </h3>
-                    <div class="video-gif-project"></div>
+                    <div class="video-gif-project">
+                        <video src="/assets/2024-04-24 00-45-48.mp4" autoplay loop muted></video>
+                    </div>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                         <span class="experience__repo"><a href="https://github.com/Dev-Josee/tempo-api"
@@ -257,14 +251,12 @@
                                     demo</button></a></span>
                     </div>
                 </div>
-            </div>
-            <div class="experiencie__box">
-                <!-- Insira a logo/captura de seu projeto/trabalho -->
-                <img class="experience__img" src="">
                 <div class="experience__info">
                     <h2 class="experience__title">Moveis.Arts</h2>
                     <h3 class="experience__text">site ficticio para prática de animações css/js e responsividade</h3>
-                    <div class="video-gif-project"></div>
+                    <div class="video-gif-project">
+                        <video src="/assets/2024-04-24 00-47-02.mp4" autoplay muted></video>
+                    </div>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                         <span class="experience__repo"><a href="https://github.com/Dev-Josee/moveis-fic"
@@ -275,40 +267,40 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- Sessão de Contato -->
+        <section class="formcontato">
+            <div id="contato" class="formcontato__contacto">
+                <div class="formcontato__text">
+                    <h2 class="formcontato__title">Contato</h2>
+                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
+                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais
+                        rápido possível. </h3>
 
-
-
-
-
-
-            <!-- Sessão de Contato -->
-            <section class="formcontato">
-                <div id="contato" class="formcontato__contacto">
-                    <div class="formcontato__text">
-                        <h2 class="formcontato__title">Contato</h2>
-                        <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                        <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais
-                            rápido possível. </h3>
-
-                    </div>
                 </div>
-                <form class="formcontato__form">
-                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                    <textarea class="formcontato__textarea" id="mensagem" name="mensagem"
-                        placeholder="Sua mensagem"></textarea>
-                    <button class="formcontato__botao">Enviar mensagem</button>
-                </form>
-            </section>
+            </div>
+            <form class="formcontato__form">
+                <label>Nome</label>
+                <input class="formcontato__input" type="text" id="nome" placeholder="Seu nome">
+                <label>E-mail</label>
+                <input class="formcontato__input" type="email" id="email" placeholder="ex:nome@algo.com">
+                <label>Assunto</label>
+                <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto do contato">
+                <label>Mensagem</label>
+                <textarea class="formcontato__textarea" id="mensagem" name="mensagem"
+                    placeholder="Sua mensagem"></textarea>
+                <button class="formcontato__botao">Enviar mensagem</button>
+            </form>
+        </section>
 
-            <!-- Sessão de Footer/Rodapé-->
-            <section class="footer">
-                <div class="footer__rodape">
-                    <p>Desenvolvido por José</p>
-                    <p>2024</p>
-                </div>
-            </section>
+
+        <!-- Sessão de Footer/Rodapé-->
+        <section class="footer">
+            <div class="footer__rodape">
+                <p>Desenvolvido por José</p>
+                <p>2024</p>
+            </div>
+        </section>
     </div>
     <!-- Script Linkado do seu documento de JavaScript -->
     <script src="validate.js"></script>

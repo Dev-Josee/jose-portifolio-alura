@@ -1,0 +1,27 @@
+.animate{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(-100%);
+    transition: all 1s ease-in-out;
+
+}
+.animate-right{
+    
+    filter: blur(10px);
+    transform: translateY(-150%);
+    transition: all 2s;
+
+}
+.animate-left{
+    display: flex;
+    filter: blur(5px);
+    transform: translateX(-200%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    
+}
+
