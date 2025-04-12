@@ -1,5 +1,4 @@
 //Seu JavaScript de validação aqui
-
 const oBservador = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -15,4 +14,4 @@ const oBservador = new IntersectionObserver((entries) => {
 
 const elements = document.querySelectorAll('.animate', '.animate-left');
 
-elements.forEach( (element) => oBservador.observe(element) );
+elements.forEach( (element) => oBservador.observe(element) );//

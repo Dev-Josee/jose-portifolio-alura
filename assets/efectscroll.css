@@ -1,21 +1,21 @@
 .animate{
     opacity: 0;
     filter: blur(15px);
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     transition: all 2s ease;
 
 }
 .animate-right{
     display: flex;
     filter: blur(10px);
-    transform: translateY(-150%);
+    transform: translateY(-80%);
     transition: all;
 
 }
 .animate-left{
     display: flex;
     filter: blur(5px);
-    transform: translateX(-150%);
+    transform: translateX(-50%);
     transition: all 1.9s;
 }
 .show{

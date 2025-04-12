@@ -1,10 +1,5 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
 :root {
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+
     --cor-de-fundo: #F5F5F5;
     --cor-de-link: #000;
     --cor-de-btn: #292929;
@@ -18,10 +13,19 @@ coloque nas sessões indicadas*/
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
-    font-family: 'Raleway';
+    
     margin: 0;
     padding: 0;
     line-height: 1;
+}
+
+@media (min-width:370px) {
+    body{
+        width: 100%;
+        height: 100%;
+        padding: 0.50rem;
+        overflow: hidden;
+    }
 }
 
 ol,
@@ -35,18 +39,7 @@ a {
     color: var(--cor-de-link);
 }
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
 
-Mas o que é o BEM?
-
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
 
 /* All*/
 .all {
@@ -103,7 +96,7 @@ section.title {
     height: 40vh;
     padding: 8% 6%;
     gap: 50px;
-   
+
 }
 
 .title__div {
@@ -160,13 +153,13 @@ section.title {
 /*Sessão About*/
 
 .about {
-    
+
     height: 300px;
     padding: 5% 6%;
     display: flex;
     position: relative;
     margin-top: 5%;
-    
+
 }
 
 .about__container {
@@ -467,303 +460,103 @@ section.footer {
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media screen and (max-width: 768px) {
 
-    /* Menu */
-    .menu {
-        display: flex;
-        justify-content: center;
-        width: 90%;
-
-    }
-   .menu__title{
-    display: none;
-   }
-
-    .menu__list {
-        gap: 22px;
-    }
-
-    .menu__list__item {
-        padding: 0;
-        font-size: 1.2rem;
-    }
-
-    /*title*/
-   section.title{
-    
-    min-height:70vh;
-    padding: 0px 3%;
-    margin: 10% 0px;
-   }
-   .title__div{
-    width: 100%;
-    height: 100%;
-    
-   }
-   .title__container{
-    width: 100%;
-    height: 100%;
-   }
-   .title__bio{
-    font-size: 4rem;
-   }
-   .title__subsection{
-    width: 80%;
-    line-height: 30px;
-    font-size: var(--font-p);
-   }
-   .title__network{
-    width: 95%;
-    margin-top: 20%;
-    margin-left: -5%;
-   }
-
-    /* sobre */
-    .about {
+@media (min-width:370px) {
+    .all{
         width: 100%;
-        height: 100%;
-        padding: 0 3%;
-    }
-    .about__container{
-        width: 100%;
-    }
-
-    /*Skills*/
-    .skills{
-        width: 100%;
-    }
-    .skills__line{
-        margin-top: -2%;
-        width: 90%;
-    }
-    /*Hobbies*/
-    .hobbies{
-        width: 100%;
-    }
-    .hobbies__line{
-        width: 90%;
-    }
-    /*Experiências acadêmicas*/
-    .academic {
-        height: 100%;
-    }
-
-    /*Expeirência profissional*/
-    .experience {
-        height: 100%;
-        height: 100%;
-    }
-    .experience__section__title{
-        font-size: var(--font-bio);
-    }
-    .experience__info{
-        text-align: center;
-        width: 100%;
-        height: 700px;
-    }
-    .experience__title{
-        font-size: 2.4rem;
-        font-weight: 600;
-    }
-    .video-gif-project{
-        width: 100%;
-        padding: 0;
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-
-}
-
-/*Mobile*/
-@media screen and (max-width: 428px) {
-
-    /*Menu*/
-    .menu {
-        display: none;
-    }
-
-    /*Titulo*/
-    section.title {
-        width: 100%;
-        min-height: 80vh;
-        padding: 3%;
-
-    }
-
-    .title__bio {
-        width: 100%;
-        text-align: start;
-        font-size: var(--font-bio)
-    }
-
-    .title__subsection {
-        width: 100%;
-        line-height: 30px;
-    }
-
-    .title__network {
-        width: 100%;
-        gap: 20px;
-        display: flex;
-        padding: 0;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 15%;
-
-    }
-
-    .title__network__item {
-        padding: 2px;
-        display: flex;
-        text-align: center;
-    }
-
-    .title__network__item i {
-        margin-top: 5px;
-    }
-
-    /*Sessão sobre*/
-    .about {
-        width: 100%;
-        height: 100%;
-        min-height: 100vh;
-    }
-
-    .about__container {
-        width: 90%;
-    }
-
-    .about__paragraph {
-        text-align: start;
-    }
-
-    /*Skills*/
-    .skills {
-        width: 100%;
-    }
-
-    .skills__line {
-        width: 90%;
-    }
-
-    /*Hobbies*/
-    .hobbies {
-        width: 100%;
-    }
-
-    .hobbies__title {
-        font-size: 5rem;
-    }
-
-    .hobbies__line {
-        width: 90%;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .hobbies__img {
-        display: none;
-    }
-
-    li.hobbies__name {
-        font-size: 0.9rem;
-    }
-
-    /*Formação Acadêmica*/
-
-    .academic {
-        width: 100%;
-        height: 70vh;
         display: flex;
         flex-direction: column;
+        
+        
     }
-
-    .academic__courses {
-        width: 90%;
-    }
-
-    /*Experiência Profissional*/
-    .experience {
-        width: 100%;
-        min-height: 100vh;
-        padding: 0;
-        display: block;
-    }
-
-    .experience__section__title {
-        font-size: var(--font-bio);
-        line-height: 70px;
-    }
-
-    .experiencie__box {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .experience__title {
-        font-size: var(--font-p);
-    }
-
-    .video-gif-project {
+    .menu{
         width: 100%;
         padding: 0;
-        border: none;
-        border-radius: 0;
-        transform: scale(0.99);
+
+            .menu__list{
+                display: none;
+            }
+
+            .menu__title{
+                font-weight: bolder;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing: 1px;
+                font-size: 2.5rem;
+            }
     }
 
-    .experience__description {
+    section.title{
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        margin: 0 -25%;
-    }
-
-    /*Contato*/
-
-    .formcontato {
-        width: 100%;
-        height: 80%;
+        padding: 0;
         min-height: 100vh;
+        margin-top: 35%;
+        margin-bottom: -80%;
+
+        .title__div{
+            
+            width: 100%;
+            height: 100%;
+        }
+
+        .title__container{
+            width: 100%;
+            position: relative;
+        }
+
+        .title__bio{
+            width: 100%;
+            font-size: 2.6rem;
+            font-family: "Raleway"; 
+            font-weight: bolder;
+            letter-spacing: normal;
+        }
+
+        .title__subsection{
+            width: 90%;
+            font-size: 1.2rem;
+            letter-spacing: normal;
+            font-weight: lighter;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .title__network{
+            width: 100%;
+            padding: 0;
+            margin-top: 18%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+        }
+        .title__network li{
+            padding:0;
+        }
+        .title__network__item{
+            width: 100%;
+            display: none;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 3px 0;
+            
+        }
+        .title__network__item, .fa-brands{
+            display: block;
+            text-align: center;
+        }
+        .fa-brands{
+            
+            font-size: 0.80rem;
+        }
+        
     }
 
-    .formcontato__contacto {
+    section.about{
         width: 100%;
-        text-align: center;
+        margin-top: -50%;
     }
 
-    .formcontato__title {
-        font-size: var(--font-bio);
-    }
 
-    .ormcontato__subtext {
-        font-size: var(--font-p);
-    }
-
-    .formcontato__form {
-        width: 90%;
-        margin: 5% auto;
-        padding: 20% 2%;
-    }
-
-    .formcontato__input,
-    .formcontato__textarea {
-        outline: none;
-        padding: 10px;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .formcontato__textarea {
-        width: 90%;
-        height: 15%;
-        margin-bottom: 15px;
-    }
-
-    /*Footer*/
-    section.footer {
-        margin-top: 5%;
-        text-align: center;
-    }
 }
